@@ -1,0 +1,277 @@
+
+@font-face {
+    font-family: "HankookTTF";
+    src: url("./fonts/HankookTTFRegular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "HankookTTF";
+    src: url("./fonts/HankookTTFMedium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "HankookTTF";
+    src: url("./fonts/HankookTTFSemibold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "HankookTTF";
+    src: url("./fonts/HankookTTFBold.ttf");
+    font-weight: 700;
+}
+
+:root {
+    --color-HKgray: #9A9B9C;
+    --color-bg: #E7E7E7;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-HKorange: #EC6608;
+}
+
+
+
+
+body{
+    font-family: "HankookTTF";
+    font-size: 16px;
+    font-weight: 500; ;
+    margin: 20px;
+}
+
+.nav-container{
+    background-color: var(--color-bg);
+    display: flex;
+    border-top-left-radius: 20px; border-top-right-radius: 20px;
+    padding-left: 40px; padding-right: 40px; padding-top: 20px; padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.navtext span {
+    display: block;
+}
+.title {
+    font-weight: 600;
+}
+.subtitle {
+    font-weight: 400;
+}
+.navright{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+
+    width: 100px;
+    text-align: center;
+
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+.nav-link:hover {
+    font-weight: 600;
+}
+
+
+
+.navleft{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-family:"HankookTTF";
+    font-weight: 600;
+    font-size: 24px;
+}
+.navleft a {
+    display: flex;
+    align-items: center;
+}
+.logoimg { 
+    width: 260px ;
+    height: auto;
+    display: block;
+}
+.navtext {
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+
+
+.hero {
+    color: var(--color-bg);
+    background: url(Reg_BG.svg) center/cover;
+    
+    left: 20px; right: 20px;
+    padding-left: 40px; padding-top: 300px; padding-bottom:300px;
+
+}
+.herohead {
+    font-size:120px;
+
+}
+.herosubhead {
+    font-size: 18px;
+}
+
+.graybox {
+    background-color: var(--color-bg);
+    padding: 300px 40px;
+}
+
+
+
+.formcard {
+    background-color: var(--color-white);
+    padding: 30px;
+    max-width: 1436px;
+    height: 900px;
+
+    transform: translateY(-500px);
+}
+.formtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.formbox {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+    row-gap: 30px;
+}
+input {
+    height:36px;
+    box-sizing: border-box;
+    padding: 12px 8px ;
+    border-radius: 0;
+    border: 1px solid var(--color-HKgray);
+    color: var(--color-bg);
+    
+}
+
+input:hover {
+    border-radius: 0px;
+    border-color: #000000;
+}
+
+input:focus {
+    border-radius: 0px;
+    border-color: #000000;
+    outline: none;
+    color: #000000;
+}
+
+
+input:not(:placeholder-shown) { 
+  color: #000000;
+  border-color: #000000;
+}
+
+input::placeholder {
+    color: var(--color-HKgray);
+    font-size: 14px;
+    opacity: 1;
+}
+
+
+
+
+.field2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 30px;
+}
+.field2box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+    row-gap: 12px;
+
+    background-color: #FDF0E6;
+    padding: 20px;
+    border: 1px solid var(--color-HKorange);
+}
+
+.field2box select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-HKgray);
+  background: white;
+  font-size: 14px;
+  color: var(--color-HKgray);
+  border-radius: 0px;
+  appearance: none;
+}
+.field2box select:focus {
+  border-color: var(--color-black);
+  outline: none;
+}
+
+.field2box select:hover {
+  border-color: var(--color-black);
+}
+
+select:valid {
+  border-color: var(--color-black);
+  color: var(--color-black);
+}
+
+
+
+
+
+
+.pill-btn {
+    padding: 12px 20px;
+    border-radius: 100px;
+    background-color: var(--color-HKorange);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-white);
+    border: none;
+    margin-top:60px;
+    align-items: right;
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.pill-btn img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.25s ease;
+}
+
+.pill-btn:hover img {
+    transform: translateX(-5px);
+}
+
+.pill-btn:hover {
+    background-color: #CE5500;
+}
+
+.btn-parent {
+    display: flex;
+    justify-content: flex-end;
+}
+
